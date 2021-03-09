@@ -141,8 +141,9 @@ html {
   content: '';
   display: block;
   width: 20%;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(#fff0fc));
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #fff0fc 100%);
+  background: rgba(255, 255, 255, 0);
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(#fff0fc));
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff0fc 100%);
 }
 
 .gallery-menu .nav-link {
