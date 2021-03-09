@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap');
+
+.gallery-area {
+    padding: 100px 0
+}
+
+.gallery-menu {
+    margin-bottom: 35px;
+    border: 0;
+    text-align: center
+}
+
+.gallery-menu .nav-link {
+    font-size: 23px;
+    color: #6a6774;
+    line-height: 36px;
+    margin: 0;
+    padding: 0 0 5px;
+    border: 0;
+    font-weight: 500
+}
+
+.gallery-menu .nav-link.active {
+    border: 0;
+    margin-bottom: 1px;
+    display: inline-block;
+    border-bottom: 1px solid
+}
+
+.gallery-item h4 {
+    margin: 20px 0 15px;
+    font-weight: 600;
+}
+
+.gallery-item h6 {
+    color: rgba(106, 103, 116, 0.6);
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.gallery-carousel .owl-nav>div {
+    position: absolute;
+    left: -80px;
+    top: 40%;
+    font-size: 35px;
+    width: 60px;
+    height: 60px;
+    line-height: 64px;
+    border: 2px solid #6a6875;
+    text-align: center;
+    border-radius: 100%;
+    color: #6a6875;
+    -webkit-transform: translateY(-40%);
+    transform: translateY(-40%)
+}
+
+.gallery-carousel .owl-nav .owl-next {
+    right: -80px;
+    left: auto;
+}
+
+.gallery-menu .owl-nav {
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: 0.5s;
+    transition: 0.5s
+}
+
+.gallery-menu .owl-nav>div {
+    position: absolute;
+    left: -50px;
+    top: 0;
+    font-size: 30px;
+    text-align: center;
+    color: #6a6875;
+}
+
+.gallery-menu .owl-nav .owl-next {
+    right: -50px;
+    left: auto;
+}
+
+.gallery-menu:hover .owl-nav {
+    visibility: visible;
+    opacity: 1
+}

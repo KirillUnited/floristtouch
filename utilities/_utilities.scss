@@ -1,0 +1,55 @@
+/* Utility */
+.has-img-fit {
+    position: relative;
+
+    &>img {
+        @include o-fit-absolute();
+    }
+}
+
+.list-style {
+    list-style: none;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.text-truncate {
+    @include truncate(100%);
+}
+
+.text-brand-style {
+    font-family: Champagne&Limousines;
+    font-size: Min(36px, getvw(28px));
+    font-weight: 400;
+    line-height: normal;
+}
+
+.text-brand-color {
+    color: #09abaa;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+[hidden],
+.hidden {
+    display: none !important;
+}
+
+@media screen and (min-width: 768px) {
+    .hidden-gt-xs {
+        display: none !important;
+    }
+}
+
+@include less-sm {
+    .hidden-xs {
+        display: none !important;
+    }
+}
