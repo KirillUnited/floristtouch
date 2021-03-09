@@ -98,11 +98,27 @@ html {
     }
 }
 
+.gallery.rsDefault {
+    .rsOverflow {
+        height: 450px !important;
+    }
+}
+.gallery.rsDefault .slide,
+.gallery.rsDefault .slide img,
+.royalSlider.rsAutoHeight, .rsAutoHeight .rsSlide {
+    height: 100% !important;
+}
+
 @include less-sm {
     .gallery-menu .nav-item {
-       text-align: left;
-       padding-left: 15px;
-       padding-right: 15px;
+        text-align: left;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .gallery.rsDefault {
+        .rsOverflow {
+            height: 250px !important;
+        }
     }
 }
 

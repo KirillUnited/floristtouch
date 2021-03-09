@@ -79,6 +79,12 @@ $(function () {
         }
     }
 
+    // $(".royalSlider").royalSlider({
+    //     // options go here
+    //     // as an example, enable keyboard arrows nav
+    //     imageScaleMode: none
+    // });  
+
     function toggleCarouselControlAnime() {
         const control = $(this.$element).find('.owl-nav');
 
