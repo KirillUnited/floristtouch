@@ -56,7 +56,7 @@ html {
             content: '';
             display: block;
             width: 20%;
-            background: rgb(0, 0, 0);
+            // background: rgb(0, 0, 0);
             background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(255, 240, 252, 1) 100%);
         }
 
@@ -85,6 +85,8 @@ html {
 }
 
 .owl-carousel {
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
 
     .owl-nav .owl-next,
     .owl-nav .owl-prev {
@@ -103,9 +105,11 @@ html {
         height: 450px !important;
     }
 }
+
 .gallery.rsDefault .slide,
 .gallery.rsDefault .slide img,
-.royalSlider.rsAutoHeight, .rsAutoHeight .rsSlide {
+.royalSlider.rsAutoHeight,
+.rsAutoHeight .rsSlide {
     height: 100% !important;
 }
 
@@ -115,6 +119,7 @@ html {
         padding-left: 15px;
         padding-right: 15px;
     }
+
     .gallery.rsDefault {
         .rsOverflow {
             height: 250px !important;

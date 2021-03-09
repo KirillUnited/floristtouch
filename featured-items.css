@@ -141,7 +141,6 @@ html {
   content: '';
   display: block;
   width: 20%;
-  background: black;
   background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(#fff0fc));
   background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #fff0fc 100%);
 }
@@ -164,6 +163,11 @@ html {
 
 .gallery-menu .nav-item {
   text-align: center;
+}
+
+.owl-carousel {
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
 }
 
 .owl-carousel .owl-nav .owl-next,
@@ -189,7 +193,8 @@ html {
 
 .gallery.rsDefault .slide,
 .gallery.rsDefault .slide img,
-.royalSlider.rsAutoHeight, .rsAutoHeight .rsSlide {
+.royalSlider.rsAutoHeight,
+.rsAutoHeight .rsSlide {
   height: 100% !important;
 }
 
