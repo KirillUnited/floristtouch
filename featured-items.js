@@ -66,19 +66,24 @@ $(function () {
                 // onTranslated: toggleCarouselControlAnime,
                 responsive: {
                     0: {
-                        items: 2
+                        items: 2,
+                        slideBy: 2
                     },
                     768: {
-                        items: 3
+                        items: 3,
+                        slideBy: 3
                     },
                     991: {
-                        items: 3
+                        items: 3,
+                        slideBy: 3
                     },
                     1200: {
-                        items: 4
+                        items: 4,
+                        slideBy: 4
                     },
                     1920: {
-                        items: 4
+                        items: 4,
+                        slideBy: 4
                     }
                 }
 
