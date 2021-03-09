@@ -10,6 +10,12 @@ $(function () {
                 autoplayTimeout: 5000,
                 smartSpeed: 450,
                 margin: 0,
+                onDragged: function () {
+                    $('body').css('overflow', 'auto');
+                },
+                onDrag: function () {
+                    $('body').css('overflow', 'hidden');
+                },
                 responsive: {
                     0: {
                         items: 2,
@@ -50,6 +56,12 @@ $(function () {
                 smartSpeed: 600,
                 margin: 20,
                 lazyLoad: false,
+                onDragged: function () {
+                    $('body').css('overflow', 'auto');
+                },
+                onDrag: function () {
+                    $('body').css('overflow', 'hidden');
+                },
                 // onTranslate: toggleCarouselControlAnime,
                 // onTranslated: toggleCarouselControlAnime,
                 responsive: {
@@ -76,14 +88,24 @@ $(function () {
     if (typeof $.fn.owlCarousel == 'function') {
         for (const { selector, options } of model.carousels) {
             $(selector).owlCarousel(options);
+
+            // disable scroll
+            $(selector).on('drag.owl.carousel', function (event) {
+                document.ontouchmove = function (e) {
+                    console.log('drag')
+                    e.preventDefault();
+                }
+            });
+    
+            // enable scroll
+            $(selector).on('dragged.owl.carousel', function (event) {
+                document.ontouchmove = function (e) {
+                    console.log('dragged')
+                    return true;
+                }
+            });
         }
     }
-
-    // $(".royalSlider").royalSlider({
-    //     // options go here
-    //     // as an example, enable keyboard arrows nav
-    //     imageScaleMode: none
-    // });  
 
     function toggleCarouselControlAnime() {
         const control = $(this.$element).find('.owl-nav');
