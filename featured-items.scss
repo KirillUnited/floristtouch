@@ -3,8 +3,9 @@
 
 @import "./gallery";
 
-html {
-    overflow-x: hidden;
+html,
+body {
+    overflow-x: hidden !important;
 }
 
 .gallery {
@@ -38,7 +39,7 @@ html {
         }
 
         img {
-            height: Min(getvw(130px), 350px);
+            height: Min(getvw(190px), 350px);
             object-fit: cover;
             object-position: 50% 50%;
         }
@@ -114,15 +115,40 @@ html {
 }
 
 @include less-sm {
-    .gallery-menu .nav-item {
-        text-align: left;
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-
     .gallery.rsDefault {
         .rsOverflow {
             height: 250px !important;
+        }
+    }
+
+    .gallery {
+        &-menu {
+            .owl-stage {
+                display: flex;
+            }
+
+            .owl-item {
+                flex: 0 0 auto;
+            }
+
+            .nav-item {
+                text-align: left;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+        }
+
+        &-carousel {
+            &.owl-carousel {
+                .featured-products & {
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+
+                .owl-stage-outer {
+                    overflow: visible;
+                }
+            }
         }
     }
 }

@@ -67,7 +67,9 @@ $(function () {
                 responsive: {
                     0: {
                         items: 2,
-                        slideBy: 2
+                        slideBy: 2,
+                        nav: false,
+                        margin: 12
                     },
                     768: {
                         items: 3,

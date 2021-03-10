@@ -86,8 +86,9 @@
   opacity: 1;
 }
 
-html {
-  overflow-x: hidden;
+html,
+body {
+  overflow-x: hidden !important;
 }
 
 .gallery-item {
@@ -121,7 +122,7 @@ html {
 }
 
 .gallery-item img {
-  height: Min(40.625vw, 350px);
+  height: Min(59.375vw, 350px);
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: 50% 50%;
@@ -200,13 +201,30 @@ html {
 }
 
 @media (max-width: 767px) {
+  .gallery.rsDefault .rsOverflow {
+    height: 250px !important;
+  }
+  .gallery-menu .owl-stage {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .gallery-menu .owl-item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+  }
   .gallery-menu .nav-item {
     text-align: left;
     padding-left: 15px;
     padding-right: 15px;
   }
-  .gallery.rsDefault .rsOverflow {
-    height: 250px !important;
+  .featured-products .gallery-carousel.owl-carousel {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .gallery-carousel.owl-carousel .owl-stage-outer {
+    overflow: visible;
   }
 }
 /*# sourceMappingURL=featured-items.css.map */
