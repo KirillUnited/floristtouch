@@ -1,8 +1,6 @@
 /* Featured Products Section */
 @import "./mixins/mixins";
 
-@import "./gallery";
-
 html,
 body {
     overflow-x: hidden !important;
@@ -152,44 +150,3 @@ body {
         }
     }
 }
-
-// .owl-carousel {
-//     &.gallery-carousel {
-//         .owl-stage-outer {
-//             overflow: visible;
-//         }
-//     }
-
-//     .owl-nav {
-//         transition: opacity 0.1s ease-in-out;
-//         opacity: 1;
-
-//         &.fadeout {
-//             opacity: 0;
-//         }
-//     }
-
-//     .owl-nav .owl-next,
-//     .owl-nav .owl-prev {
-//         display: flex;
-//         align-items: center;
-//         justify-content: center;
-//         position: absolute;
-//         top: 50%;
-//         transform: translate(0, -50%);
-//         background-color: #fff;
-//         padding: 9px;
-
-//         &.disabled {
-//             display: none;
-//         }
-//     }
-
-//     .owl-nav .owl-prev {
-//         left: 0;
-//     }
-
-//     .owl-nav .owl-next {
-//         right: 0;
-//     }
-// }
