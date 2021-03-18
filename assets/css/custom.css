@@ -1,1 +1,21 @@
-/* No CSS */
+/*Featured items*/
+.gallery-menu::after {
+  pointer-events: none;
+}
+
+.gallery-menu .owl-stage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.gallery-menu .owl-item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+
+.gallery-menu .nav-item {
+  padding-left: 0;
+  padding-right: 0;
+}
