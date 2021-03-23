@@ -1,21 +1,32 @@
 /*Featured items*/
-.gallery {
-    &-menu {
-        &::after {
-            pointer-events: none;
+
+.gallery-style {
+    @import "../public/no21flowers/images/featured-items9f67";    
+    @import "./responsive";
+    .gallery {
+        &-menu {
+            &::after {
+                pointer-events: none;
+            } 
+
+            .owl-stage {
+                display: flex;
+            }
+
+            .owl-item {
+                flex: 0 0 auto;
+            }
+
+            .nav-item {
+                padding-left: 0;
+                padding-right: 0;
+            }
         }
 
-        .owl-stage {
-            display: flex;
-        }
-
-        .owl-item {
-            flex: 0 0 auto;
-        }
-
-        .nav-item {
-            padding-left: 0;
-            padding-right: 0;
+        @media only screen and (min-width: 480px) and (max-width: 767px) {
+            &-menu {
+                margin-bottom: 35px;
+            }
         }
     }
 }
