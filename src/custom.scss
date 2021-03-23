@@ -1,4 +1,8 @@
 /*Featured items*/
+html,
+body {
+  overflow-x: hidden !important;
+}
 
 .gallery-style {
     @import "../public/no21flowers/images/featured-items9f67";    

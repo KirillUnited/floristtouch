@@ -1,5 +1,10 @@
 /*Featured items*/
 @import url("https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700&amp;family=Roboto:wght@400;500;700&amp;display=swap");
+html,
+body {
+  overflow-x: hidden !important;
+}
+
 .gallery-style {
   /* Featured Products Section */
 }
@@ -90,11 +95,6 @@
 .gallery-style .gallery-menu:hover .owl-nav {
   visibility: visible;
   opacity: 1;
-}
-
-.gallery-style html,
-.gallery-style body {
-  overflow-x: hidden !important;
 }
 
 .gallery-style .gallery-item {
