@@ -2,9 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700&amp;family=Roboto:wght@400;500;700&amp;display=swap");
 .gallery-style {
   /* Featured Products Section */
-  /*--------------------------------------------------------------
-    small mobile
-----------------------------------------------------------------*/
 }
 
 .gallery-style .gallery-area {
@@ -319,51 +316,13 @@
   }
 }
 
-@media only screen and (min-width: 360px) and (max-width: 479px) {
+@media only screen and (max-width: 479px) {
   .gallery-style .gallery-menu .nav-link {
     font-size: 19px;
     line-height: 26px;
   }
   .gallery-style .gallery-menu {
     padding-left: 25px;
-  }
-  .gallery-style .gallery-carousel .owl-nav > div {
-    font-size: 20px;
-    width: 35px;
-    height: 35px;
-    line-height: 36px;
-    left: -5px;
-    top: 30%;
-    -webkit-transform: translateY(-38%);
-    transform: translateY(-30%);
-    left: -5px;
-  }
-  .gallery-style .gallery-carousel .owl-nav .owl-next {
-    right: -5px;
-  }
-  .gallery-style .gallery-menu .owl-nav > div {
-    left: -25px;
-  }
-  .gallery-style .gallery-item h4 {
-    font-size: 18px;
-    line-height: 24px;
-  }
-  .gallery-style .gallery-menu .owl-nav .owl-next {
-    right: -25px;
-  }
-  .gallery-style .gallery-area {
-    padding: 75px 0;
-  }
-}
-
-@media only screen and (min-width: 320px) and (max-width: 359px) {
-  .gallery-style .gallery-menu .nav-link {
-    font-size: 20px;
-    line-height: 26px;
-  }
-  .gallery-style .gallery-menu {
-    padding-left: 25px;
-    margin-bottom: 0;
   }
   .gallery-style .gallery-carousel .owl-nav > div {
     font-size: 20px;
