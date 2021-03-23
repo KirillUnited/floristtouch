@@ -2,7 +2,7 @@
 $(function () {
     const model = {
         carousels: [{
-            selector: '.gallery-menu',
+            selector: '.gallery-style .gallery-menu',
             options: {
                 loop: true,
                 nav: false,
@@ -45,7 +45,7 @@ $(function () {
                 }
             }
         }, {
-            selector: '.gallery-carousel',
+            selector: '.gallery-style .gallery-carousel',
             options: {
                 loop: false,
                 navText: ['<i class="icofont-simple-left"></i>', '<i class="icofont-simple-right"></i>'],

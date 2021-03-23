@@ -9,7 +9,8 @@ $(function () {
                 autoplay: false,
                 autoplayTimeout: 5000,
                 smartSpeed: 450,
-                margin: 0,
+                margin: 40,
+                autoWidth: true,
                 onDragged: function () {
                     $('body').css('overflow', 'auto');
                 },
@@ -20,26 +21,26 @@ $(function () {
                     0: {
                         items: 2,
                         stagePadding: 20,
-                        autoWidth: true
+                        margin: 20
                     },
                     480: {
                         items: 2,
                         stagePadding: 40,
-                        autoWidth: true
+                        margin: 25
                     },
                     768: {
                         items: 5,
-                        center: true,
                         stagePadding: 30,
+                        margin: 30
                     },
                     991: {
                         items: 6
                     },
                     1200: {
-                        items: 6,
+                        items: 6
                     },
                     1920: {
-                        items: 6,
+                        items: 6
                     }
                 }
             }
