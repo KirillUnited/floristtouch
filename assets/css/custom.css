@@ -358,6 +358,7 @@ body {
 }
 
 .gallery-style .gallery-menu .owl-stage {
+  display: block !important;
   height: 40px;
   overflow: hidden;
 }
