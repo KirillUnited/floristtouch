@@ -94,23 +94,23 @@ $(function () {
         $(model.carousels[0].selector).owlCarousel(model.carousels[0].options);
         $(model.carousels[0].selector).trigger('refresh.owl.carousel');
         $(model.carousels[1].selector).owlCarousel(model.carousels[1].options);
-        for (const { selector, options } of model.carousels) {
-            // $(selector).owlCarousel(options);
-            // $(selector).trigger('refresh.owl.carousel');
+        // for (const { selector, options } of model.carousels) {
+        //     // $(selector).owlCarousel(options);
+        //     // $(selector).trigger('refresh.owl.carousel');
 
-            // disable scroll
-            $(selector).on('drag.owl.carousel', function (event) {
-                document.ontouchmove = function (e) {
-                    e.preventDefault();
-                } 
-            });
+        //     // disable scroll
+        //     $(selector).on('drag.owl.carousel', function (event) {
+        //         document.ontouchmove = function (e) {
+        //             e.preventDefault();
+        //         } 
+        //     });
     
-            // enable scroll
-            $(selector).on('dragged.owl.carousel', function (event) {
-                document.ontouchmove = function (e) {
-                    return true;
-                }
-            });
-        }
+        //     // enable scroll
+        //     $(selector).on('dragged.owl.carousel', function (event) {
+        //         document.ontouchmove = function (e) {
+        //             return true;
+        //         }
+        //     });
+        // }
     }
 });
