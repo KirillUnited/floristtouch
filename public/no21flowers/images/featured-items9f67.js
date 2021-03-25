@@ -95,20 +95,20 @@ $(function () {
             $(selector).owlCarousel(options);
 
             // disable scroll
-            $(selector).on('drag.owl.carousel', function (event) {
-                document.ontouchmove = function (e) {
-                    console.log('drag')
-                    e.preventDefault();
-                }
-            });
+            // $(selector).on('drag.owl.carousel', function (event) {
+            //     document.ontouchmove = function (e) {
+            //         console.log('drag')
+            //         e.preventDefault();
+            //     }
+            // });
     
             // enable scroll
-            $(selector).on('dragged.owl.carousel', function (event) {
-                document.ontouchmove = function (e) {
-                    console.log('dragged')
-                    return true;
-                }
-            });
+            // $(selector).on('dragged.owl.carousel', function (event) {
+            //     document.ontouchmove = function (e) {
+            //         console.log('dragged')
+            //         return true;
+            //     }
+            // });
         }
     }
 });
