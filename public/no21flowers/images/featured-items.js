@@ -4,7 +4,7 @@ $(function () {
         carousels: [{
             selector: '.gallery-style .gallery-menu',
             options: {
-                // loop: true,
+                loop: true,
                 nav: false,
                 autoplay: false,
                 autoplayTimeout: 5000,

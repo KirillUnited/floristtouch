@@ -15,10 +15,10 @@ body {
             }
 
             .owl-stage {
-                //     display: block !important;
-                //     height:40px;
-                //     overflow: hidden;
-                // transform: translate3d(0px, 0px, 0px) !important; 
+                display: -webkit-box;
+                display: -moz-box;
+                display: -ms-box;
+                display: box;
             }
 
             .owl-item {
