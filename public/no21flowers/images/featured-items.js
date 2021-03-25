@@ -4,7 +4,7 @@ $(function () {
         carousels: [{
             selector: '.gallery-style .gallery-menu',
             options: {
-                loop: true,
+                // loop: true,
                 nav: false,
                 autoplay: false,
                 autoplayTimeout: 5000,
@@ -127,6 +127,6 @@ $(function () {
         // if ( elW > stageW ) {
         //     $stage.width( elW );
         // };
-        $('.gallery-style .gallery-menu').trigger( 'refresh.owl.carousel' );
+        // $('.gallery-style .gallery-menu').trigger( 'refresh.owl.carousel' );
     }
 });
