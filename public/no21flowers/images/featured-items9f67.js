@@ -22,13 +22,13 @@ $(function () {
                         items: 2,
                         // stagePadding: 20,
                         margin: 20,
-                        autoWidth: false
+                        // autoWidth: false
                     },
                     480: {
                         items: 2,
                         // stagePadding: 40,
                         margin: 25,
-                        autoWidth: false
+                        // autoWidth: false
                     },
                     768: {
                         items: 5,
