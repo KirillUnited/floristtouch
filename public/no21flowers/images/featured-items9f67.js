@@ -21,12 +21,14 @@ $(function () {
                     0: {
                         items: 2,
                         stagePadding: 20,
-                        margin: 20
+                        margin: 20,
+                        autoWidth: false
                     },
                     480: {
                         items: 2,
                         stagePadding: 40,
-                        margin: 25
+                        margin: 25,
+                        autoWidth: false
                     },
                     768: {
                         items: 5,
@@ -94,7 +96,7 @@ $(function () {
         for (const { selector, options } of model.carousels) {
             $(selector).owlCarousel(options);
 
-            $(window).resize();
+            // $(window).resize();
 
             // disable scroll
             $(selector).on('drag.owl.carousel', function (event) {
