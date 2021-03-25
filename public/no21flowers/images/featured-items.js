@@ -18,7 +18,9 @@ $(function () {
                 onDrag: function () {
                     $('body').css('overflow', 'hidden');
                 },
-                // items: 9,
+                items: 9,
+                onInitialized: fixOwl,
+                onRefreshed: fixOwl
                 // slideBy: 4,
                 // responsive: {
                 //     0: {
@@ -112,5 +114,18 @@ $(function () {
                 }
             });
         }
+    }
+
+    function fixOwl(){
+        var $stage = $('.owl-stage'),
+            stageW = $stage.width(),
+            $el = $('.owl-item'),
+            elW = 0;
+        $el.each(function() {
+            elW += $(this).width()+ +($(this).css("margin-right").slice(0, -2))
+        });
+        if ( elW > stageW ) {
+            $stage.width( elW );
+        };
     }
 });
