@@ -358,6 +358,9 @@ body {
 }
 
 .gallery-style .gallery-menu .owl-stage {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-box;
   display: box;
 }
 
