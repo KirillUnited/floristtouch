@@ -355,6 +355,7 @@ body {
 
 .gallery-style .gallery-menu::after {
   pointer-events: none;
+  z-index: 11;
 }
 
 .gallery-style .gallery-menu .owl-stage {

@@ -12,6 +12,7 @@ body {
         &-menu {
             &::after {
                 pointer-events: none;
+                z-index: 11;
             }
             
             &.transform {
