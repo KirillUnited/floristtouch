@@ -4,7 +4,7 @@ $(function () {
         carousels: [{
             selector: '.gallery-style .gallery-menu',
             options: {
-                // loop: true,
+                loop: true,
                 nav: false,
                 autoplay: false,
                 autoplayTimeout: 5000,
@@ -19,7 +19,7 @@ $(function () {
                     $('body').css('overflow', 'hidden');
                 },
                 items: 9,
-                onInitialized: fixOwl,
+                // onInitialized: fixOwl,
                 // onRefreshed: fixOwl
                 // slideBy: 4,
                 // responsive: {
@@ -98,7 +98,17 @@ $(function () {
         // $(model.carousels[0].selector).trigger('refresh.owl.carousel');
         // $(model.carousels[1].selector).owlCarousel(model.carousels[1].options);
         for (const { selector, options } of model.carousels) {
-            $(selector).owlCarousel(options).trigger('refresh.owl.carousel');
+            // $(selector).owlCarousel(options).trigger('refresh.owl.carousel');
+            const promise = new Promise((resolve, reject) => {
+                $(selector).owlCarousel(options);
+                resolve();
+            });
+
+            promise.then(() => {
+                setTimeout(() => {
+                    $(selector).trigger('refresh.owl.carousel');                    
+                }, 50);
+            });
 
             // disable scroll
             $(selector).on('drag.owl.carousel', function (event) {
@@ -128,5 +138,12 @@ $(function () {
         //     $stage.width( elW );
         // };
         // $('.gallery-style .gallery-menu').trigger( 'refresh.owl.carousel' );
+        var owlData = $(this.$element).data('owl.carousel');
+        console.log(this, owlData);
+        $('.gallery-style .gallery-menu').trigger('change.owl.carousel', {
+            mouseDrag: false,
+            touchDrag: false,
+            pullDrag: false
+          });
     }
 });
