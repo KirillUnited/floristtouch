@@ -35,6 +35,8 @@ function autoscrollHeader() {
     var w = window.innerWidth;
       if (w > 1023) {
         autoscrollHeader();
+      } else {
+        $(window).resize();
       }
   }
   autoscrollTrigger();  

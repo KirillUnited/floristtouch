@@ -1,17 +1,18 @@
 /*Featured items*/
 html,
 body {
-  overflow-x: hidden !important;
+    overflow-x: hidden !important;
 }
 
 .gallery-style {
-    @import "../public/no21flowers/images/featured-items9f67";    
+    @import "../public/no21flowers/images/featured-items9f67";
     @import "./responsive";
+
     .gallery {
         &-menu {
             &::after {
                 pointer-events: none;
-            } 
+            }
 
             // .owl-stage {
             //     display: block !important;
@@ -34,5 +35,11 @@ body {
                 margin-bottom: 35px;
             }
         }
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    header {
+        // position: fixed;
     }
 }
