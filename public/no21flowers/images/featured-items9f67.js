@@ -20,19 +20,19 @@ $(function () {
                 responsive: {
                     0: {
                         items: 2,
-                        stagePadding: 20,
+                        // stagePadding: 20,
                         margin: 20,
                         autoWidth: false
                     },
                     480: {
                         items: 2,
-                        stagePadding: 40,
+                        // stagePadding: 40,
                         margin: 25,
                         autoWidth: false
                     },
                     768: {
                         items: 5,
-                        stagePadding: 30,
+                        // stagePadding: 30,
                         margin: 30
                     },
                     991: {
