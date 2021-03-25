@@ -365,6 +365,7 @@ body {
 }
 
 .gallery-style .gallery-menu .owl-item {
+  display: inline;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
