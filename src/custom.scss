@@ -13,17 +13,25 @@ body {
             &::after {
                 pointer-events: none;
             }
+            
+            &.transform {
+                .owl-stage {
+                    // transform: translate3d(0px, 0px, 0px) !important;
+                }
+            }
 
             .owl-stage {
-                display: -webkit-box;
-                display: -moz-box;
-                display: -ms-box;
-                display: box;
+                display: flex;
+
+                &-outer {
+                    z-index: 1;
+                }
             }
 
             .owl-item {
                 width: max-content !important;
                 flex: 0 0 auto;
+                transform: translateZ(0);
             }
 
             .nav-item {

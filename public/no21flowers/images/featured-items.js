@@ -4,7 +4,7 @@ $(function () {
         carousels: [{
             selector: '.gallery-style .gallery-menu',
             options: {
-                // loop: true,
+                loop: true,
                 nav: false,
                 autoplay: false,
                 autoplayTimeout: 5000,
@@ -19,7 +19,6 @@ $(function () {
                     $('body').css('overflow', 'hidden');
                 },
                 items: 9,
-                onInitialized: fixOwl
             }
         }, {
             selector: '.gallery-style .gallery-carousel',
