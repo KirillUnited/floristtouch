@@ -91,19 +91,19 @@ $(function () {
     }
     if (typeof $.fn.owlCarousel == 'function') {
         
-        // $(model.carousels[0].selector).owlCarousel(model.carousels[0].options);
-        // $(model.carousels[0].selector).trigger('refresh.owl.carousel');
-        // $(model.carousels[1].selector).owlCarousel(model.carousels[1].options);
+        $(model.carousels[0].selector).owlCarousel(model.carousels[0].options);
+        $(model.carousels[0].selector).trigger('refresh.owl.carousel');
+        $(model.carousels[1].selector).owlCarousel(model.carousels[1].options);
         for (const { selector, options } of model.carousels) {
-            $(selector).owlCarousel(options);
-            $(selector).trigger('refresh.owl.carousel');
+            // $(selector).owlCarousel(options);
+            // $(selector).trigger('refresh.owl.carousel');
 
             // disable scroll
             $(selector).on('drag.owl.carousel', function (event) {
                 document.ontouchmove = function (e) {
                     console.log('drag')
                     e.preventDefault();
-                }
+                } 
             });
     
             // enable scroll
