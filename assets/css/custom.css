@@ -357,14 +357,23 @@ body {
   pointer-events: none;
 }
 
+.gallery-style .gallery-menu .owl-stage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .gallery-style .gallery-menu .owl-item {
-  display: inline;
+  width: -webkit-max-content !important;
+  width: -moz-max-content !important;
+  width: max-content !important;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
 }
 
 .gallery-style .gallery-menu .nav-item {
+  text-align: left;
   padding-left: 0;
   padding-right: 0;
 }

@@ -14,19 +14,17 @@ body {
                 pointer-events: none;
             }
 
-            // .owl-stage {
-            //     display: -webkit-box;
-            //     display: -moz-box;
-            //     display: -ms-box;
-            //     display: box;
-            // }
+            .owl-stage {
+                display: flex;
+            }
 
             .owl-item {
-                display: inline;
+                width: max-content !important;
                 flex: 0 0 auto;
             }
 
             .nav-item {
+                text-align: left;
                 padding-left: 0;
                 padding-right: 0;
             }
