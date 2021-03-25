@@ -358,9 +358,7 @@ body {
 }
 
 .gallery-style .gallery-menu .owl-stage {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: box;
 }
 
 .gallery-style .gallery-menu .owl-item {
