@@ -357,13 +357,6 @@ body {
   pointer-events: none;
 }
 
-.gallery-style .gallery-menu .owl-stage {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-box;
-  display: box;
-}
-
 .gallery-style .gallery-menu .owl-item {
   display: inline;
   -webkit-box-flex: 0;
