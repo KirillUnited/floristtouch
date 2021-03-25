@@ -14,11 +14,12 @@ body {
                 pointer-events: none;
             }
 
-            // .owl-stage {
-            //     display: block !important;
-            //     height:40px;
-            //     overflow: hidden;
-            // }
+            .owl-stage {
+                //     display: block !important;
+                //     height:40px;
+                //     overflow: hidden;
+                // transform: translate3d(0px, 0px, 0px) !important; 
+            }
 
             .owl-item {
                 flex: 0 0 auto;
@@ -40,6 +41,6 @@ body {
 
 // @media screen and (max-width: 1023px) {
 //     header {
-        // position: fixed;
+// position: fixed;
 //     }
 // }
