@@ -18,7 +18,7 @@ $(function () {
                 onDrag: function () {
                     $('body').css('overflow', 'hidden');
                 },
-                items: 9,
+                items: 9
             }
         }, {
             selector: '.gallery-style .gallery-carousel',
@@ -94,6 +94,6 @@ $(function () {
     function fixOwl(selector) {
         setTimeout(() => {
             $(selector).trigger('refresh.owl.carousel');
-        }, 50);
+        }, 1500);
     }
 });
