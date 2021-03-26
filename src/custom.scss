@@ -1,4 +1,6 @@
 /*Featured items*/
+@import "./mixins/mixins";
+
 html,
 body {
     overflow-x: hidden !important;
@@ -13,12 +15,6 @@ body {
             &::after {
                 pointer-events: none;
                 z-index: 11;
-            }
-            
-            &.transform {
-                .owl-stage {
-                    // transform: translate3d(0px, 0px, 0px) !important;
-                }
             }
 
             .owl-stage {
@@ -45,6 +41,16 @@ body {
         @media only screen and (min-width: 480px) and (max-width: 767px) {
             &-menu {
                 margin-bottom: 35px;
+            }
+        }
+
+        @include less-sm {
+            &-menu {
+                &::after {
+                    right: -2px;
+                    width: 40%;
+                    max-width: 180px;
+                }
             }
         }
     }

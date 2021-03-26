@@ -68,10 +68,10 @@ $(function () {
     }
     if (typeof $.fn.owlCarousel == 'function') {
         for (const { selector, options } of model.carousels) {
-            new Promise((resolve, reject) => {
+            new Promise(function (resolve, reject) {
                 $(selector).owlCarousel(options);
                 resolve();
-            }).then(() => {
+            }).then(function () {
                 fixOwl(selector);
             });
 
@@ -92,8 +92,8 @@ $(function () {
     }
 
     function fixOwl(selector) {
-        setTimeout(() => {
-            $(selector).trigger('refresh.owl.carousel');
+        setTimeout(function () {
+            $(selector).trigger("refresh.owl.carousel");
         }, 1500);
     }
 });
