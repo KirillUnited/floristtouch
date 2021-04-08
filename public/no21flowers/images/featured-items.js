@@ -88,6 +88,18 @@ $(function () {
                     return true;
                 }
             });
+
+            if (selector === '.gallery-style .gallery-carousel') {
+                const $slider = $(selector);
+
+                nextImage($slider);
+
+                $slider.on('change.owl.carousel', function (event) {
+                    setTimeout(function () {
+                        nextImage($slider);
+                    }, 100);
+                });
+            }
         }
     }
 
@@ -95,5 +107,12 @@ $(function () {
         setTimeout(function () {
             $(selector).trigger("refresh.owl.carousel");
         }, 1500);
+    }
+
+    function nextImage($slider) {
+        const $image = $slider.find('.owl-item.active:last').next().find('.owl-lazy');
+        const src = $image.data('src');
+
+        $image.attr('src', src);
     }
 });
