@@ -397,4 +397,7 @@ body {
     width: 40%;
     max-width: 180px;
   }
+  .gallery-style .gallery-carousel .owl-item.active + .owl-item .owl-lazy {
+    opacity: 1;
+  }
 }

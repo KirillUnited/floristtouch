@@ -52,6 +52,16 @@ body {
                     max-width: 180px;
                 }
             }
+
+            &-carousel {
+                .owl-item.active {
+                    &+.owl-item {
+                        .owl-lazy {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
         }
     }
 }
