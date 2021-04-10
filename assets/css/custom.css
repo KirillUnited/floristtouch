@@ -406,4 +406,7 @@ body {
   html {
     overflow-x: visible !important;
   }
+  #content[role="main"] {
+    overflow: hidden;
+  }
 }
