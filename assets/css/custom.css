@@ -1,6 +1,5 @@
 /*Featured items*/
 @import url("https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700&amp;family=Roboto:wght@400;500;700&amp;display=swap");
-html,
 body {
   overflow-x: hidden !important;
 }
@@ -399,5 +398,11 @@ body {
   }
   .gallery-style .gallery-carousel .owl-item.active + .owl-item .owl-lazy {
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  html {
+    overflow-x: visible !important;
   }
 }

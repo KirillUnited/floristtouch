@@ -1,7 +1,6 @@
 /*Featured items*/
 @import "./mixins/mixins";
 
-html,
 body {
     overflow-x: hidden !important;
 }
@@ -66,8 +65,8 @@ body {
     }
 }
 
-// @media screen and (max-width: 1023px) {
-//     header {
-// position: fixed;
-//     }
-// }
+@media screen and (max-width: 1023px) {
+    html {
+        overflow-x: visible !important;
+    }
+}
